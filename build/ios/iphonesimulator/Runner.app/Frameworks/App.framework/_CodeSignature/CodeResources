@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		UsEUcsyP9U8ZOWmD4g2FAKe5yck=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -30,7 +30,51 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		ujop52mOSRRVXuw4JMbJiegSNtM=
+		qPSxcd+wiEWzeO9l81WdpLwsT+o=
+		</data>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile1.jpeg</key>
+		<data>
+		OH4drRp+Rm43GP6XgVgy2T/G0yA=
+		</data>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile2.jpeg</key>
+		<data>
+		YXV9rbwKscRvOr8BdvUT8fBa6YA=
+		</data>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile3.jpeg</key>
+		<data>
+		MvtoOMTIhHzZjJIgujPRGK/uPQk=
+		</data>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile4.jpeg</key>
+		<data>
+		+E+37O94iFBhCJPEPrvKK3DVups=
+		</data>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile5.jpeg</key>
+		<data>
+		2Womf4WMmS9mqV1s1ZZ+4pGcNiI=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story1.webp</key>
+		<data>
+		tpx5LNga737QPnG8yb3DEX3vmxQ=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story2.webp</key>
+		<data>
+		bXM0nBF3AItxza15wd+32fv+sRM=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story3.webp</key>
+		<data>
+		aOhbvpGmWwXia4c4yS/J+i0NnoU=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story4.webp</key>
+		<data>
+		LYeKH8AhhreAkzh9Rr5WpAlPKaA=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story5.webp</key>
+		<data>
+		ac7rK0gBCBJTvaMmGvV3oFEnW5w=
+		</data>
+		<key>flutter_assets/lib/assets/images/story/Story6.webp</key>
+		<data>
+		Qd93XXP90BlkBj8hr49pDKy47nE=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -47,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			mZz230QSLSgks12YOWcNu6d31ouaDg5o75HUzJZ+3zo=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -82,7 +126,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6PFmOs3Ez31+JA92nZFi/z6ngr5/QNWnzOD9g6Mjito=
+			VIZYSpwh1Xl3hGjFNj0Eu/YbZppWcSEPKVyZ7euvcK4=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile1.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N9B5WW/dPaTyFvMultqPht7aQ7mVcbheRT93BJ503G4=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile2.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eAAOC7F/EMLR9FVg+OpcKzoiFuVD/RdHG70C5XQmXcY=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile3.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H1MXCuwx9SjHY8MsgCPg07jzQKStykKmmZ5fs5oLoro=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile4.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/WmGEwhjgu+V0k87gY2m2ry3csp/tYV+HKazh/BMRgM=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/profilePics/Profile5.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8hTSfrArp3WXzUkLMFf1VnECvZ/DDxreGZEwInbyMzM=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story1.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			byVHbpbEMR7EcrWKK4QlTlKp5UhNzoddA/fFUGH6mEs=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story2.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			US9fKvXX9rFq9vFZrzj95CvYPPSCG0Jo7h9GbCIWP7g=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story3.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3ldDlbfwSolNGoBBR9pT24Pu2FbuTbfqEwwBD4zplgY=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story4.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fw0kFXzciEb1tjjqxJH8+ObGu1r/GRb2u7lkd2sqODM=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story5.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eI3zfBEFQUJ7fB8+ARP2igCLS03bYTKycBVqKjUHP94=
+			</data>
+		</dict>
+		<key>flutter_assets/lib/assets/images/story/Story6.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w7tP+Y5ApQyOx15rfMCo8ORGA+7SAiqRyUUUXrFxoWY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

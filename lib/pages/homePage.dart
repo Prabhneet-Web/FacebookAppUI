@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
             child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Padding(
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -68,7 +68,38 @@ class _HomePageState extends State<HomePage> {
                       height: 180,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
-                        children: [makeStory()],
+                        children: [
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story1.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile1.jpeg",
+                              userName: "Alok Bhandari"),
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story2.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile2.jpeg",
+                              userName: "Mukul Giri"),
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story3.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile3.jpeg",
+                              userName: "Ujjwal Agrawal"),
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story4.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile4.jpeg",
+                              userName: "Priyanshu Pokhriyal"),
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story5.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile5.jpeg",
+                              userName: "Sagar Mamgain"),
+                          makeStory(
+                              storyImage: "lib/assets/images/story/Story6.webp",
+                              userImage:
+                                  "lib/assets/images/profilePics/Profile6.jpeg",
+                              userName: "Darshan Raval")
+                        ],
                       ),
                     )
                   ],
@@ -81,7 +112,44 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget makeStory() {
-    return AspectRatio(aspectRatio: 1 / 3);
+  Widget makeStory({storyImage, userImage, userName}) {
+    return AspectRatio(
+      aspectRatio: 1.4 / 2,
+      child: Container(
+          margin: const EdgeInsets.only(right: 10),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              image: DecorationImage(
+                  image: AssetImage(storyImage), fit: BoxFit.cover)),
+          child: Container(
+            padding: EdgeInsets.all(10),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                gradient: LinearGradient(begin: Alignment.bottomRight, colors: [
+                  Colors.black.withOpacity(0.9),
+                  Colors.black.withOpacity(0.2)
+                ])),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  width: 40,
+                  height: 40,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: Colors.white, width: 2),
+                      image: DecorationImage(
+                          image: AssetImage(userImage), fit: BoxFit.cover)),
+                ),
+                Text(
+                  userName,
+                  style: const TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          )),
+    );
   }
 }
