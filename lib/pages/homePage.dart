@@ -122,6 +122,15 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       const SizedBox(height: 40),
+                      makeFeed(
+                        userName: "Mukul Giri",
+                        userImage:
+                            "lib/assets/images/profilePics/Profile2.jpeg",
+                        feedTime: "1 hr ago",
+                        feedText:
+                            "Hey Everyone, Mukul this side. A BSC Nursing Student!",
+                        feedImage: "lib/assets/images/story/Story2.webp",
+                      ),
                     ],
                   ),
                 ),
@@ -176,3 +185,111 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+Widget makeFeed({userName, userImage, feedTime, feedText, feedImage}) {
+  return Container(
+    margin: const EdgeInsets.only(bottom: 20),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                Container(
+                  width: 50,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                        image: AssetImage(userImage), fit: BoxFit.cover),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        userName,
+                        style: TextStyle(
+                            fontSize: 15,
+                            color: Colors.grey[900],
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 0.4),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        feedTime,
+                        style: TextStyle(fontSize: 12, color: Colors.grey[600]),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.more_horiz, size: 20, color: Colors.grey[600]),
+            )
+          ],
+        ),
+        const SizedBox(height: 20),
+        Text(feedText, style: TextStyle(fontSize: 13, color: Colors.grey[800])),
+        const SizedBox(height: 20),
+        Container(
+            height: 250,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              image: DecorationImage(
+                  image: AssetImage(feedImage), fit: BoxFit.cover),
+            )),
+        const SizedBox(height: 20),
+        Row(
+          children: [
+            Row(
+              children: [
+                makeLike(),
+                Transform.translate(offset: Offset(-6, 0), child: makeLove())
+              ],
+            )
+          ],
+        )
+      ],
+    ),
+  );
+}
+
+Widget makeLike() {
+  return Container(
+    width: 22,
+    height: 22,
+    decoration: BoxDecoration(
+      color: Colors.blue,
+      shape: BoxShape.circle,
+      border: Border.all(color: Colors.white),
+    ),
+    child: const Center(
+      child: Icon(Icons.thumb_up, size: 13, color: Colors.white),
+    ),
+  );
+}
+
+Widget makeLove() {
+  return Container(
+    width: 22,
+    height: 22,
+    decoration: BoxDecoration(
+      color: Colors.red,
+      shape: BoxShape.circle,
+      border: Border.all(color: Colors.white),
+    ),
+    child: const Center(
+      child: Icon(Icons.favorite, size: 13, color: Colors.white),
+    ),
+  );
+}
+// Widget makeLikeButton() {}
+// Widget makeCommentButton() {}
+// Widget makeShareButton() {}
