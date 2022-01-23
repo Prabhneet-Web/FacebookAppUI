@@ -123,14 +123,45 @@ class _HomePageState extends State<HomePage> {
                       ),
                       const SizedBox(height: 40),
                       makeFeed(
-                        userName: "Mukul Giri",
-                        userImage:
-                            "lib/assets/images/profilePics/Profile2.jpeg",
-                        feedTime: "1 hr ago",
-                        feedText:
-                            "Hey Everyone, Mukul this side. A BSC Nursing Student!",
-                        feedImage: "lib/assets/images/story/Story2.webp",
-                      ),
+                          userName: "Mukul Giri",
+                          userImage:
+                              "lib/assets/images/profilePics/Profile2.jpeg",
+                          feedTime: "1 hr ago",
+                          feedText:
+                              "Hey Everyone, Mukul this side. A BSC Nursing Student!",
+                          feedImage: "lib/assets/images/story/Story2.webp",
+                          numberOfLikes: "2.5K",
+                          numberOfComments: "510"),
+                      makeFeed(
+                          userName: "Ujjwal Agrawal",
+                          userImage:
+                              "lib/assets/images/profilePics/Profile3.jpeg",
+                          feedTime: "1.2 hr ago",
+                          feedText:
+                              "Hey Everyone, Ujjwal this side. A BCom Student!",
+                          feedImage: "",
+                          numberOfLikes: "500",
+                          numberOfComments: "26"),
+                      makeFeed(
+                          userName: "Alok Bhandari",
+                          userImage:
+                              "lib/assets/images/profilePics/Profile1.jpeg",
+                          feedTime: "1.6 hr ago",
+                          feedText:
+                              "Hey Everyone, Alok this side. A BTech Student!",
+                          feedImage: "lib/assets/images/story/Story1.webp",
+                          numberOfLikes: "3K",
+                          numberOfComments: "600"),
+                      makeFeed(
+                          userName: "Sagar Mamgain",
+                          userImage:
+                              "lib/assets/images/profilePics/Profile5.jpeg",
+                          feedTime: "2.5 hr ago",
+                          feedText:
+                              "Hey Everyone, Sagar this side. A BSC Student!",
+                          feedImage: "lib/assets/images/story/Story5.webp",
+                          numberOfLikes: "980",
+                          numberOfComments: "102"),
                     ],
                   ),
                 ),
@@ -186,7 +217,14 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-Widget makeFeed({userName, userImage, feedTime, feedText, feedImage}) {
+Widget makeFeed(
+    {userName,
+    userImage,
+    feedTime,
+    feedText,
+    feedImage,
+    numberOfLikes,
+    numberOfComments}) {
   return Container(
     margin: const EdgeInsets.only(bottom: 20),
     child: Column(
@@ -238,24 +276,43 @@ Widget makeFeed({userName, userImage, feedTime, feedText, feedImage}) {
         const SizedBox(height: 20),
         Text(feedText, style: TextStyle(fontSize: 13, color: Colors.grey[800])),
         const SizedBox(height: 20),
-        Container(
-            height: 250,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              image: DecorationImage(
-                  image: AssetImage(feedImage), fit: BoxFit.cover),
-            )),
+        feedImage != ""
+            ? Container(
+                height: 250,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  image: DecorationImage(
+                      image: AssetImage(feedImage), fit: BoxFit.cover),
+                ))
+            : Container(),
         const SizedBox(height: 20),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               children: [
                 makeLike(),
-                Transform.translate(offset: Offset(-6, 0), child: makeLove())
+                Transform.translate(
+                    offset: const Offset(-6, 0), child: makeLove()),
+                const SizedBox(width: 5),
+                Text(
+                  numberOfLikes,
+                  style: TextStyle(fontSize: 14, color: Colors.grey[800]),
+                ),
               ],
+            ),
+            Text(
+              "$numberOfComments Comments",
+              style: TextStyle(fontSize: 14, color: Colors.grey[800]),
             )
           ],
-        )
+        ),
+        SizedBox(height: 20),
+        Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+          makeLikeButton(isActive: true),
+          makeCommentButton(),
+          makeShareButton()
+        ])
       ],
     ),
   );
@@ -290,6 +347,73 @@ Widget makeLove() {
     ),
   );
 }
-// Widget makeLikeButton() {}
-// Widget makeCommentButton() {}
-// Widget makeShareButton() {}
+
+Widget makeLikeButton({isActive}) {
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+    decoration: BoxDecoration(
+      border: Border.all(color: Colors.white),
+      borderRadius: BorderRadius.circular(50),
+    ),
+    child: Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(Icons.thumb_up,
+              color: isActive ? Colors.blue : Colors.grey[700]),
+          const SizedBox(width: 5),
+          Text(
+            "Like",
+            style: TextStyle(color: isActive ? Colors.blue : Colors.grey[700]),
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+Widget makeCommentButton() {
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+    decoration: BoxDecoration(
+      border: Border.all(color: Colors.white),
+      borderRadius: BorderRadius.circular(50),
+    ),
+    child: Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(Icons.chat, color: Colors.grey[700]),
+          const SizedBox(width: 5),
+          Text(
+            "Comment",
+            style: TextStyle(color: Colors.grey[700]),
+          )
+        ],
+      ),
+    ),
+  );
+}
+
+Widget makeShareButton() {
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+    decoration: BoxDecoration(
+      border: Border.all(color: Colors.white),
+      borderRadius: BorderRadius.circular(50),
+    ),
+    child: Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(Icons.share, color: Colors.grey[700]),
+          const SizedBox(width: 5),
+          Text(
+            "Share",
+            style: TextStyle(color: Colors.grey[700]),
+          )
+        ],
+      ),
+    ),
+  );
+}
