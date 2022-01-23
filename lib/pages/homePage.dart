@@ -19,16 +19,17 @@ class _HomePageState extends State<HomePage> {
             Container(
               padding: const EdgeInsets.only(left: 20, top: 20),
               child: const Text(
-                "faceboook",
+                "facebook",
                 style: TextStyle(
-                    fontSize: 37,
+                    fontFamily: "klavika-bold.otf",
+                    fontSize: 39,
                     color: Colors.blue,
                     fontWeight: FontWeight.w800),
               ),
             ),
             Container(
-              padding:
-                  const EdgeInsets.only(top: 16, bottom: 10, right: 20, left: 20),
+              padding: const EdgeInsets.only(
+                  top: 16, bottom: 10, right: 20, left: 20),
               height: 60,
               child: Row(
                 children: [
@@ -39,7 +40,8 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.grey[200]),
                       child: const TextField(
                           decoration: InputDecoration(
-                              prefixIcon: Icon(Icons.search, color: Colors.grey),
+                              prefixIcon:
+                                  Icon(Icons.search, color: Colors.grey),
                               border: InputBorder.none,
                               hintStyle: TextStyle(color: Colors.grey),
                               hintText: "Search")),
@@ -69,51 +71,57 @@ class _HomePageState extends State<HomePage> {
                             style: TextStyle(
                                 color: Colors.grey[900],
                                 fontWeight: FontWeight.w900,
-                                fontSize: 24,
-                                letterSpacing: 1.0),
+                                fontSize: 24),
                           ),
-                          Text("See Archive")
+                          const Text("See Archive")
                         ],
                       ),
                       const SizedBox(height: 20),
-                      Container(
+                      SizedBox(
                         height: 180,
                         child: ListView(
                           scrollDirection: Axis.horizontal,
                           children: [
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story1.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story1.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile1.jpeg",
                                 userName: "Alok Bhandari"),
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story2.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story2.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile2.jpeg",
                                 userName: "Mukul Giri"),
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story3.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story3.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile3.jpeg",
                                 userName: "Ujjwal Agrawal"),
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story4.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story4.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile4.jpeg",
                                 userName: "Priyanshu Pokhriyal"),
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story5.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story5.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile5.jpeg",
                                 userName: "Sagar Mamgain"),
                             makeStory(
-                                storyImage: "lib/assets/images/story/Story6.webp",
+                                storyImage:
+                                    "lib/assets/images/story/Story6.webp",
                                 userImage:
                                     "lib/assets/images/profilePics/Profile6.jpeg",
                                 userName: "Darshan Raval")
                           ],
                         ),
-                      )
+                      ),
+                      const SizedBox(height: 40),
                     ],
                   ),
                 ),
@@ -135,7 +143,7 @@ class _HomePageState extends State<HomePage> {
               image: DecorationImage(
                   image: AssetImage(storyImage), fit: BoxFit.cover)),
           child: Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 gradient: LinearGradient(begin: Alignment.bottomRight, colors: [
@@ -158,7 +166,9 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   userName,
                   style: const TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 13),
                 )
               ],
             ),

@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		5X+9s8BQnWLalcfS+cYjQRikc8A=
+		xLsZh6ipapevVeESwejeyoQZrsA=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		QOH9ub8J7fLBuhnAIbNmHkwI8TQ=
+		Ne9OnMsXgLDcGEw9bMDgTROSRdg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		UsEUcsyP9U8ZOWmD4g2FAKe5yck=
+		ugDvm38KJnRGPNCsyHoz4RVFAU8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		qPSxcd+wiEWzeO9l81WdpLwsT+o=
+		RrpsIQmWAfqsGGAVHLwJJzhjAy0=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/profilePics/Profile1.jpeg</key>
 		<data>
@@ -163,6 +163,10 @@
 		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/profilePics/Profile5.jpeg</key>
 		<data>
 		2Womf4WMmS9mqV1s1ZZ+4pGcNiI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/profilePics/Profile6.jpeg</key>
+		<data>
+		mtS2bkBNDF/A1w2DdpsITCbtteY=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/story/Story1.webp</key>
 		<data>
@@ -477,7 +481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aCub9Q5C6x/yA2zBx2T+333O1hfAcPBC6RHtNtUJ1AQ=
+			/GgdP30EhBi4rxlvg+4grwEt3uMg+rMaXKgLwpJQP3M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -491,14 +495,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4sLF5fcuoA9JQqqaiM5MBycsC5ybAMmCVWVcvFdcxU=
+			RcXebTEdMupVGuuA/yeGYGBS35uB2Bqs2IuvvCpSurA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZz230QSLSgks12YOWcNu6d31ouaDg5o75HUzJZ+3zo=
+			tNfA+Du5VkEQQyC7njzEP4En1iTuELDtN2NveNT+5Qc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -533,7 +537,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VIZYSpwh1Xl3hGjFNj0Eu/YbZppWcSEPKVyZ7euvcK4=
+			vqXySLTb1tix6lU85Xt23OUOeVevO+NuTpM/yGkZN7c=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/profilePics/Profile1.jpeg</key>
@@ -569,6 +573,13 @@
 			<key>hash2</key>
 			<data>
 			8hTSfrArp3WXzUkLMFf1VnECvZ/DDxreGZEwInbyMzM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/profilePics/Profile6.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			haaU6YsLJkQFEirwANNE5AQ3s/UIl8a0jIRaf+E5f2k=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/lib/assets/images/story/Story1.webp</key>
