@@ -1,5 +1,5 @@
-Faceboook App UI.
+##Facebook Clone
 
-This respository consists of the Faceboook App Clone.
+This app is just the clone of Facebook App
 
-Happy Fluttering!!
+<img src = "lib/assets/snapshots/Snap1.png" height = "400em" /> || <img src = "lib/assets/snapshots/Snap2.png" height = "400em" /> || <img src = "lib/assets/snapshots/Snap3.png" height = "400em" /> || <img src = "lib/assets/snapshots/Snap4.png" height = "400em" />
